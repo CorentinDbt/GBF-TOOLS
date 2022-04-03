@@ -8,20 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace KPI_Tools
+namespace KPI_Tools.Properties
 {
-    public partial class Connec : Form
+    public partial class cpdf : Form
     {
-        public Connec()
+        public cpdf()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void cpdf_Load(object sender, EventArgs e)
         {
-           KPI_Tools.Cpdf IntPDF = new KPI_Tools.Cpdf();
-           IntPDF.Show();
-           this.Hide();
+
         }
     }
 }
