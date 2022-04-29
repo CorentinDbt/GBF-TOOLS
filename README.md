@@ -2,7 +2,7 @@
 
 ### Fonctionnalités : 
 
-- Création de fiches de matchs
+- Création des fiches de matchs
 
 ### Images :
 
