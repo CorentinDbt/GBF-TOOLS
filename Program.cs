@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace KPI_Tools
+namespace GBF
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace KPI_Tools
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PLoading());
+            Application.Run(new Connec());
         }
     }
 }

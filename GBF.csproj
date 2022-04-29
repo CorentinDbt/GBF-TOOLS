@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{34687FA3-51E1-4B31-92D8-762ECC57D5A2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>KPI_Tools</RootNamespace>
-    <AssemblyName>KPI Tools</AssemblyName>
+    <RootNamespace>GBF</RootNamespace>
+    <AssemblyName>GBF</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,15 +32,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\logo_ico.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
-    <Reference Include="Guna.Charts.WinForms, Version=1.0.2.0, Culture=neutral, PublicKeyToken=4cb9ae78886bbe24, processorArchitecture=MSIL">
-      <HintPath>packages\Guna.Charts.WinForms.1.0.2\lib\net40\Guna.Charts.WinForms.dll</HintPath>
+    <Reference Include="Guna.Charts.WinForms, Version=1.0.3.0, Culture=neutral, PublicKeyToken=4cb9ae78886bbe24, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.Charts.WinForms.1.0.3\lib\net40\Guna.Charts.WinForms.dll</HintPath>
     </Reference>
-    <Reference Include="Guna.UI2, Version=2.0.2.5, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
-      <HintPath>packages\Guna.UI2.WinForms.2.0.2.5\lib\net40\Guna.UI2.dll</HintPath>
+    <Reference Include="Guna.UI2, Version=2.0.3.2, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.3.2\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
@@ -64,37 +67,29 @@
     <Compile Include="Connec.Designer.cs">
       <DependentUpon>Connec.cs</DependentUpon>
     </Compile>
-    <Compile Include="PLoading.cs">
+    <Compile Include="Fiche.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PLoading.Designer.cs">
-      <DependentUpon>PLoading.cs</DependentUpon>
+    <Compile Include="Fiche.Designer.cs">
+      <DependentUpon>Fiche.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Connec.resx">
       <DependentUpon>Connec.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cpdf.resx">
-      <DependentUpon>Cpdf.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PLoading.resx">
-      <DependentUpon>PLoading.cs</DependentUpon>
+    <EmbeddedResource Include="Fiche.resx">
+      <DependentUpon>Fiche.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Cpdf.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Cpdf.Designer.cs">
-      <DependentUpon>Cpdf.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -106,9 +101,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\Blooming Elegant Sans Bold.otf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lgbf.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

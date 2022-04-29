@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace KPI_Tools
+namespace GBF
 {
     public partial class Connec : Form
     {
@@ -17,11 +17,16 @@ namespace KPI_Tools
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-           KPI_Tools.Cpdf IntPDF = new KPI_Tools.Cpdf();
-           IntPDF.Show();
-           this.Hide();
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Fiche Pfiche = new Fiche();
+            Pfiche.Show();
+            this.Hide();
         }
     }
 }
