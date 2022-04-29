@@ -12,7 +12,7 @@
 
 ### Releases :
 
-[Ver. 1.0](http://https://github.com/CorentinDbt/GBF-TOOLS/releases/tag/v1.0.0 "Ver. 1.0")
+[Ver. 1.0](https://github.com/CorentinDbt/GBF-TOOLS/releases/tag/v1.0.0 "Ver. 1.0")
 
 
 
